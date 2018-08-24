@@ -48,8 +48,8 @@
     <div class="reveal">
       <div class="slides">
 
+        <!-- Quiz 1-
       <section>
-        <!-- Quiz 1-->
         <section>
           <h3>Quiz Part 1</h3>
           <p>Within your &lt;html&gt;&lt;/html&gt; tags, which are the two nested tags required for a website?</p>
@@ -65,7 +65,7 @@
       </div>
         </section>
 
-        <!-- Quiz 2-->
+        <!-- Quiz 2-
         <section>
           <h3>Quiz Part 2</h3>
           <p class="fragment visible">What does a complete paragraph element look like?</p>
@@ -75,7 +75,7 @@
           </div>
         </section>
 
-        <!-- Quiz 3-->
+        <!-- Quiz 3-
         <section>
           <h3>Quiz Part 3</h3>
           <p class="fragment">What does a complete link (anchor) element look like?  Hint: needs an 'href'.</p>
@@ -84,7 +84,7 @@
 </code></pre>
           </div>
         </section>
-      </section>
+      </section> -->
 
       <section>
         <!-- Inline vs. block-->
@@ -247,7 +247,7 @@
 
 
 
-    <section>
+    </section>
       <!-- Span -->
       <section>
         <section>
@@ -312,6 +312,7 @@ a:active {color:#0000FF;} /* selected link */
 </code></pre>
           <p>a:hover <strong>MUST</strong> come after a:link and a:visited in the CSS definition to be effective!</p>
           <p>a:active <strong>MUST</strong> come after a:hover in the CSS definition to be effective!</p>
+          <a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">List of pseudo-classes</a>
         </section>
 
         <!-- Exercise-->
@@ -436,7 +437,7 @@ width: 300px;
         <section>
           <h3>Wrappers</h3>
           <p>Wrappers are a good way to center content if the screen width is wider than your content.</p>
-<pre><code class="css">div.wrapper{
+<pre><code class="css">div.wrapper {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
@@ -448,7 +449,7 @@ width: 300px;
         <section>
           <h3>Let's Develop it!</h3>
           <p>Let's add some padding, borders, and margins to our divs.</p>
-          <p>Let's center our entire document in the browser.</p>
+          <p>Let's center our content in the browser.</p>
         </section>
       </section>
     </section>
@@ -462,7 +463,7 @@ width: 300px;
           <h3>Property: Width</h3>
           <p>Sets the width of an element.</p>
           <p>Does not include padding or borders. Remember to add these to the width.</p>
-<pre><code class="css">div#sidebar{
+<pre><code class="css">div#sidebar {
   width: 31%;
   padding: 1%;
   border: none; //Total width is 33%
@@ -475,7 +476,7 @@ width: 300px;
           <h3>Property: Height</h3>
           <p>Sets the height of an element.</p>
           <p>Does not include padding or borders. Remember to add these to the height.</p>
-<pre><code class="css">p.alert{
+<pre><code class="css">p.alert {
   height: 50px;
   padding: 5px;
   border: 2px solid red; //Total height is 64px
@@ -550,7 +551,7 @@ width: 300px;
         <section>
           <h3>Relative Positioning</h3>
           <p>The "relative" value will still put the element in the normal flow, but then offset it according to top/left/right/bottom properties.</p>
-<pre><code class="css">.relative{
+<pre><code class="css">.relative {
 position: relative;
 left: 80px;
 top: 20px;
@@ -581,13 +582,13 @@ background-color: yellow;
         <section  style="border: 1px solid black">
           <h3>Absolute Positioning</h3>
           <p>The "absolute" value will take the element out of the normal flow and position it in relation to the window (or the closest non-static element).</p>
-<pre><code class="css">.top{
+<pre><code class="css">.top {
 position: absolute;
 top: -40px;
 right: 10px;
 background-color: yellow
 }
-.bottom{
+.bottom {
 position: absolute;
 bottom: -40px;
 left:60px;
@@ -619,13 +620,13 @@ background-color: green
         <section>
           <h3>Z-index</h3>
           <p>Sometimes elements overlap. You can change the order of overlapping with z-index. The element with highest z-index goes on top.</p>
-<pre><code class ="css">.bottom{
+<pre><code class ="css">.bottom {
 position: absolute;
 bottom: 10px;
 left:60px;
 background-color: yellow;
 }
-.top{
+.top {
 position: absolute;
 bottom: 15px;
 left:60px;
@@ -667,13 +668,14 @@ z-index: 2;
 
         <section>
           <h3>Float</h3>
-<pre><code class="css">.float{
-float:left;
-width:200px;
-background:yellow;
+<pre><code class="css">.float {
+float: left;
+margin-right: 5px;
+width: 200px;
+background: yellow;
 }
 </code></pre>
-          <div style ="float:left; text-align: left;width:200px;background:yellow; color:black; padding: 10px;">
+          <div style ="float:left; text-align: left;width:200px;background:yellow; color:black; padding: 10px; margin-right:5px;">
             <small>Hi, I'm a yellow box with black text.<br/>
             I like to hang out on the left side.</small>
           </div>
@@ -713,12 +715,12 @@ clear: both;
 
         <section>
           <h3>Clear</h3>
-<pre><code class ="css">.float{
+<pre><code class ="css">.float {
 float:left;
 width:50px;
 background:yellow;
 }
-.clear-left{
+.clear-left
 clear:left
 }
 </code></pre>
@@ -736,6 +738,23 @@ clear:left
         <section>
           <h3>Let's Develop It</h3>
           <p>Let's float our side bar and content areas.</p>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h3>Congratulations!!</h3>
+          <p>You've set up your first web page!</p>
+        </section>
+
+        <section>
+          <h3>Please Take the Time to Give Feedback</h3>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSff2lJhPNiiA2johgVh1jvVCsywM7qS00Ngw9KypqZGX8iaHw/viewform" target="_blank">Class Survey</a>
+        </section>
+
+        <section>
+          <h3>Resources</h3>
+
         </section>
       </section>
 
